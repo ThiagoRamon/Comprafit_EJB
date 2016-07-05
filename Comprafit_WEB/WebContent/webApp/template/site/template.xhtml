@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+		      	xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"> 
+<html lang="pt-br">
+	<h:head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="wpointer solution"/>
+    <title>CompraFit</title>
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/css/site/bootstrap.css" rel="stylesheet"/>
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/css/site/font-awesome.min.css" rel="stylesheet"/>
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/css/site/jquery.bxslider.css" rel="stylesheet"/>
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/css/site/style.css" rel="stylesheet"/>
+    
+    
+	</h:head>
+
+	<h:body>
+	    <ui:insert name="cabecalho">
+	    	<ui:include src="./cabecalho.xhtml" />
+	   	</ui:insert>   
+	   	
+	    <ui:insert name="conteudo" />
+	    <ui:insert name="rodape">
+	     		<ui:include src="./rodape.xhtml" />
+	   	</ui:insert>
+	</h:body>
+</html> 
+</ui:composition>

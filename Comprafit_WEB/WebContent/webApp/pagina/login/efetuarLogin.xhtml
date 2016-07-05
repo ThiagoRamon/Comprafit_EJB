@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      			xmlns:h="http://java.sun.com/jsf/html"
+      			xmlns:f="http://java.sun.com/jsf/core"
+      			xmlns:ui="http://java.sun.com/jsf/facelets"
+      			xmlns:c="http://java.sun.com/jsp/jstl/core"
+      			xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+      			xmlns:p="http://primefaces.org/ui"
+      			template="../../template/login/template.xhtml">
+
+	<ui:define name="conteudo">
+					<div class="container" id="login-form">
+						<!-- Logo -->
+	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+	            	<div class="well logo">
+	            		<a href="#{facesContext.externalContext.request.contextPath}">
+	            			CompraFit <span>Online Shop</span>
+	            		</a>
+	            		<div>O seu shopping fitness online.</div>
+	            	</div>
+	            </div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="panel panel-default">
+								<div class="panel-heading"><h2>Formulário de Login</h2></div>
+								<div class="panel-body">
+									
+									<form action="" class="form-horizontal" id="validate-form">
+										<div class="form-group">
+					                        <div class="col-xs-12">
+					                        	<div class="input-group">							
+													<span class="input-group-addon">
+														<i class="fa fa-user"></i>
+													</span>
+													<input type="text" class="form-control" placeholder="Email ou usuario" data-parsley-minlength="6"  />
+												</div>
+					                        </div>
+										</div>
+				
+										<div class="form-group">
+					                        <div class="col-xs-12">
+					                        	<div class="input-group">
+													<span class="input-group-addon">
+														<i class="fa fa-key"></i>
+													</span>
+													<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"/>
+												</div>
+					                        </div>
+										</div>
+				
+										<div class="form-group">
+											<div class="col-xs-12">
+												<a href="extras-forgotpassword.html" class="pull-left">Esqueceu sua senha?</a>
+												<div class="checkbox-inline icheck pull-right pt0">
+													<label for="">
+														<input type="checkbox"></input>
+														lembre de mim
+													</label>
+												</div>
+											</div>
+										</div>
+									
+				
+										<div class="panel-footer">
+											<div class="clearfix">
+												<a href="cadastroLogin.xhtml" class="btn btn-default pull-left">Cadastre-se</a>
+												<a href="login.html" class="btn btn-primary pull-right">Entrar</a>
+											</div>
+										</div>
+				
+									</form>
+								</div>
+							</div>
+				
+							<!--div class="text-center">
+								<a href="#" class="btn btn-label btn-social btn-facebook mb20"><i class="fa fa-fw fa-facebook"></i>Conerctar-se com o Facebook</a>
+								<a href="#" class="btn btn-label btn-social btn-twitter mb20"><i class="fa fa-fw fa-twitter"></i>Conectar-se com o Twitter</a>
+							</div-->
+						</div>
+					</div>
+				</div>
+					
+	</ui:define>
+
+</ui:composition>
+
+
+
