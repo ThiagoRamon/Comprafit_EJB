@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+		      	xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"> 
+<html lang="pt-br">
+	<h:head>
+
+
+    <meta charset="utf-8"/>
+    
+    <title>Login - CompraFit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="description" content="trmultmarcas Admin Theme"/>
+    <meta name="author" content="wpointer solutions"/>
+   
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,700' rel='stylesheet' type='text/css'/>
+   
+   
+   <!--[if lt IE 10]>
+        <script src="#{facesContext.externalContext.request.contextPath}/webApp/assets/js/media.match.min.js"></script>
+        <script src="#{facesContext.externalContext.request.contextPath}/webApp/assets/js/placeholder.min.js"></script>
+    <![endif]-->
+
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/fonts/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>        <!-- Font Awesome -->
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/css/styles.css" type="text/css" rel="stylesheet"/>                                     <!-- Core CSS with all styles -->
+
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/jstree/dist/themes/avalon/style.min.css" type="text/css" rel="stylesheet"/>    <!-- jsTree -->
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/codeprettifier/prettify.css" type="text/css" rel="stylesheet"/>                <!-- Code Prettifier -->
+    <link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/iCheck/skins/minimal/blue.css" type="text/css" rel="stylesheet"/>              <!-- iCheck -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
+    <!--[if lt IE 9]>
+        <link href="webApp/assets/css/ie8.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+        <script type="text/javascript" src="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/charts-flot/excanvas.min.js"></script>
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- The following CSS are included as plugins and can be removed if unused-->
+    
+<link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/form-daterangepicker/daterangepicker-bs3.css" type="text/css" rel="stylesheet"/>    	<!-- DateRangePicker -->
+<link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/switchery/switchery.css" type="text/css" rel="stylesheet"/>        					<!-- Switchery -->
+<link href="#{facesContext.externalContext.request.contextPath}/webApp/assets/plugins/fullcalendar/fullcalendar.css" type="text/css" rel="stylesheet"/> 						<!-- FullCalendar -->
+   
+   </h:head>
+
+	<h:body styleClass="infobar-offcanvas">
+	     <ui:insert name="header">
+	    	<ui:include src="./header.xhtml" />
+	   	</ui:insert>
+	   	
+	   
+	   	
+	   	<ui:insert name="menu_bar">
+	   	  
+	    	<ui:include src="./menu.xhtml" />
+	    	
+	    	
+	    </ui:insert>     
+        
+        
+        
+	   	    
+	    
+	    
+	    
+	    <ui:insert name="menu_info">
+	    	<ui:include src="./menuInfo.xhtml" />
+	   	</ui:insert> 
+	   	
+	    <ui:insert name="footer">
+	    	<ui:include src="./footer.xhtml" />
+	   	</ui:insert>   
+	   	
+	   
+	</h:body>
+</html> 
+</ui:composition>

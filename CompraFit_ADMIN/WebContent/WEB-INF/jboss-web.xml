@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jboss-web>
+	<!-- URL to access the web module -->
+	<context-root>CompraFit_ADMIN</context-root>
+
+	<!-- Realm that will be used -->
+	<security-domain>java:/jaas/COMPRAFIT_REALM</security-domain>
+</jboss-web>
